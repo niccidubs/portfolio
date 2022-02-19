@@ -1,0 +1,316 @@
+/*===== Text =====*/
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h2 {
+    color: white;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/*==== Images ====*/
+
+img {
+    max-width: 90%;
+}
+
+/*===== Links =====*/
+a {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white !important;
+    font-size: 24px;
+    text-decoration: none;
+    padding-right: 25px;
+}
+
+a:hover {
+    color: #fe8888 !important;
+}
+
+/*===== Navigation=====*/
+
+.bg-light {
+    /* background: transparent !important; */
+    background-image: url(../images/nav-bg-transparency.png);
+
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../images/hamburger-menu.png);
+}
+
+.navbar-brand img {
+    width: 200px;
+}
+
+.navbar {
+    background-image: url(../images/nav-bg-transparency.png);
+}
+
+
+.navbar-nav {
+    padding-left: 65%;
+}
+
+/*==== Back to Top Button ====*/
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2e4159;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background-color: #fe8888;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24);
+    color: white !important;
+}
+
+/* #return-to-top:hover a {
+    color: white !important;
+} */
+
+/*===== Jumbotron =====*/
+
+.jumbotron {
+    padding: 0;
+    background-image: url(../usdtImages/desktop_in_use@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    ;
+    height: calc(100vh - 25px);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    border-radius: 0;
+
+}
+
+.caseStudyTitle {
+    padding: 17% 15%;
+    width: 60%;
+}
+
+/*==== Case Study Body ====*/
+
+.sectionContainer-bg {
+    margin-top: 0%;
+    padding: 35px 20% 35px;
+    background-color: #fffbe6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sectionContainer {
+    padding: 35px 20% 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sectionContainer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sectionContainer a {
+    color: black !important;
+}
+
+.imageContainer {
+    /* padding: 0% 5%; */
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/*==== Button ====*/
+button {
+    background-color: #2e4159;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    /* line-height: 100px; */
+    /*Adjust this to change distance between button and list above*/
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    /* Rounded Corners*/
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24);
+    /* background-color: #fe8888; */
+    color: white;
+}
+
+#mobile {
+    padding-bottom: 25px;
+}
+
+#footer {
+    text-align: center;
+}
+
+/*==== PAGE FOOTER ====*/
+/* ======================
+   Footer
+   =====================*/
+   footer {
+    padding: 35px 5% 35px;
+    background-color: #2e4159;
+}
+
+footer p {
+    color: white;
+}
+
+footer h5 {
+    color: white;
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "contactMe caseStudies"
+        "name caseStudies"
+        "phone caseStudies"
+        "email caseStudies"
+        "socialIcons caseStudies"
+        "copyright caseStudies";
+    margin: 0px auto;
+    background-color: #2e4159;
+    color: white;
+    padding: 15px auto;
+}
+
+#contactMe {
+    grid-area: contactMe;
+}
+
+#name {
+    grid-area: name;
+}
+
+#socialIcons {
+    grid-area: socialIcons;
+    margin: 0px;
+}
+
+#phone {
+    grid-area: phone;
+}
+
+#email {
+    grid-area: email;
+}
+
+#copyright {
+    grid-area: copyright;
+}
+
+#caseStudies {
+    grid-area: caseStudies;
+}
+
+
+/*==== MEDIA QUERY ====*/
+
+@media only screen and (max-width: 800px) {
+
+    .jumbotron {
+        background-image: url(../usdtImages/desktop_in_use_tablet.png);
+        background-position: cover;
+    }
+
+    .caseStudyTitle {
+        padding: 13% 15%;
+        width: 80%;
+    }
+
+    .sectionContainer {
+        padding: 35px 10% 35px;
+    }
+
+    .sectionContainer-bg {
+            padding: 35px 10% 35px;
+        }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    img {
+        max-width: 90%;
+    }
+
+    .jumbotron {
+        background-image: url(../usdtImages/desktop_in_use_mobile.png);
+        background-position: center;
+    }
+
+    .caseStudyTitle {
+        padding: 5% 10%;
+        width: 85%;
+    }
+
+    .caseStudyTitle h1 {
+        font-size: 26px;
+    }
+
+    .caseStudyTitle h2 {
+        font-size: 20px;
+    }
+}
