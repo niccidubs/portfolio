@@ -2,7 +2,7 @@
    Text
    =====================*/
 
-   html {
+html {
     scroll-behavior: smooth;
 }
 
@@ -209,7 +209,7 @@ a:hover {
    About Me
    =====================*/
 
-   #aboutMe {
+#aboutMe {
     padding: 35px 5% 35px 5%;
 }
 
@@ -251,10 +251,10 @@ a:hover {
 }
 
 .projectImage {
-     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 #mobile {
@@ -283,7 +283,7 @@ a:hover {
 /* ======================
    Footer
    =====================*/
-   footer {
+footer {
     padding: 35px 5% 35px;
     background-color: #2e4159;
 }
@@ -341,8 +341,8 @@ footer h5 {
 
     #bioContainer {
         display: flex;
-    flex-direction: column;
-    gap: 16px;
+        flex-direction: column;
+        gap: 16px;
     }
 
     #bio {
@@ -352,6 +352,7 @@ footer h5 {
     #myWork {
         padding: 5%;
     }
+
     #myWorkContainer {
         display: block;
     }
@@ -385,12 +386,13 @@ footer h5 {
         display: block;
     }
 
-    #socialIcons{
+    #socialIcons {
         padding-top: 25px;
     }
-.footerContainer {
-    margin: 0;
-}
+
+    .footerContainer {
+        margin: 0;
+    }
 
 
 }
